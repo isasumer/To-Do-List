@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+h2 {
+    padding-bottom: 10px;
+}
+.container {
+    display:flex;
+    flex-direction:row;
+    margin:5px;
+    justify-content: center;
+}
+.first {
+    width:20%;
+}
+.middle {
+    width:50%;
+}
+.last {
+    width:20%;
+}
+.first, .middle, .last {
+    border: 1px solid red;
+    padding : 20px;
+    margin:5px;
+    height:80vh;
+}
