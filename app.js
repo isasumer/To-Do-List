@@ -18,3 +18,9 @@ ekle.addEventListener("click",function(){
     // Veri inputu içerisindeki metni siliyoruz.
     veri.value = "";
   });
+
+  let newclass = document.querySelector ("body>div>div>h2")
+ 
+  newclass.classList.add("myDay", "second");
+  newclass.classList.remove("second");
+ console.log(newclass.classList);
