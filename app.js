@@ -1,5 +1,5 @@
 let date = document.querySelector("#date");
-date.innerHTML = new Date().getDate()+'-'+(new Date().getMonth()+1)+'-'+new Date().getFullYear();
+date.innerHTML = new Date();
 
 let liste = document.querySelector(".liste")
 var urun = document.querySelector("#veri"); 
