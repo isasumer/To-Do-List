@@ -21,6 +21,7 @@ h2 {
 }
 .middle {
     width:50%;
+    height:100%
 }
 .last {
     width:20%;
@@ -29,5 +30,5 @@ h2 {
     border: 1px solid red;
     padding : 20px;
     margin:5px;
-    height:80vh;
+
 }

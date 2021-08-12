@@ -5,7 +5,7 @@ document.getElementById("date").innerHTML = date.toLocaleDateString();
 let list = document.querySelector("#list")
 let input = document.querySelector("#input"); 
 let button = document.querySelector("#button")
-let temporary= "";
+
 let i=0;
 button.addEventListener("click", function(){
   
