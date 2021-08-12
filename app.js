@@ -5,10 +5,12 @@ document.getElementById("date").innerHTML = date.toLocaleDateString();
 let list = document.querySelector("#list")
 let input = document.querySelector("#input"); 
 let button = document.querySelector("#button")
-
-
+let temporary= "";
+let i=0;
 button.addEventListener("click", function(){
-  // let clickNum=0;
+  
+
+  let temporary=i
   const color = ['primary', 'secondary', 'success', 'danger', 'warning', 'info']
   
     let li_input=document.createElement("input");
@@ -16,7 +18,7 @@ button.addEventListener("click", function(){
 
       let li = document.createElement('li');
       li.classList.add('list-group-item');
-      li.classList.add('list-group-item-'+color[4]);
+      li.classList.add('list-group-item-'+color[i%7]);
     // Input ile gelen veriyi "li" içerisine metin olarak giriyoruz.
     li.textContent=input.value; 
     
@@ -25,7 +27,7 @@ button.addEventListener("click", function(){
     // li.appendChild(input)
     // Veri inputu içerisindeki metni siliyoruz.
     input.value = "";
-    // clickNum +=1
+    i++;
   });
 
   let newclass = document.querySelector ("body>div>div>h2")
