@@ -1,11 +1,13 @@
-let date = document.querySelector("#date");
-date.innerHTML = new Date();
+
+let date = new Date();
+document.getElementById("date").innerHTML = date.toLocaleDateString();
 
 let liste = document.querySelector(".liste")
-var urun = document.querySelector("#veri"); 
-var ekle = document.querySelector("#ekle")
+let urun = document.querySelector("#veri"); 
+let button = document.querySelector("#button")
 
-ekle.addEventListener("click",function(){
+button.addEventListener("click", function(){
+  console.log ("basıldı")
     // createElement ile yeni bir listItem (li) oluşturuyoruz
     var li=document.createElement("li"); 
     

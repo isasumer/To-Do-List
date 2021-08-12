@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <title>To Do List</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>To-Do List</h1>
     <div class="container">
+      <div class="first"></div>
+      <div class="middle">
+        <h2>Tarih : <span id="date"></span></h2>
         
-        <div class="first"></div>
-        <div class="middle">
-            <h2>Günüm</h2>
-            <div id="date">isa</div>
-            <ul class="liste">
-                <li class="list">A</li>
-                <li class="list">B</li>
-                <li class="list">C</li>
-            </ul>
-            <div class="form">
-                <input type="text" id="veri">
-<button id="ekle">Listeye Öğe Ekle</button>
-            </div>
-            
-        </div>
-        <div class="last"></div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="veri" placeholder="Yapılacak iş" >
+            <button class="btn btn-success" aria-label="" type="button" id="button">Ekle</button>
+          </div>
+        <ul class="liste">
+          <li class="list">A</li>
+          <li class="list">B</li>
+          <li class="list">C</li>
+        </ul>
+      </div>
+      <div class="last"></div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
